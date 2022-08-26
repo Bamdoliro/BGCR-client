@@ -6,48 +6,56 @@
     justify-content: space-between;
     width: 900px;
     margin: 20px auto;
-}
 
-.front-info {
-    display: flex;
-    align-items: center;
-}
+    .front-info {
+        display: flex;
+        align-items: center;
 
-.rank-number {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-    margin-right: 15px;
-}
+        .rank-info {
+            .rank-number {
+                font-size: 24px;
+                font-weight: 600;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+    }
 
-.profile {
-    display: flex;
-    align-items: center;
-}
+    .profile {
+        display: flex;
+        align-items: center;
 
-.profile_img {
-    width: 50px;
-    height: 50px;
-    border-radius: 70%;
-    margin-right: 5px;
-}
+        .profile_img {
+            width: 50px;
+            height: 50px;
+            border-radius: 70%;
+            margin-right: 5px;
+        }
 
-.git-id {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 20px;
-}
+        .info {
+            .git-id {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+            }
 
-.user-name {
-    font-size: 15px;
-    color: $gray;
-    font-weight: 550;
-}
+            .user-name {
+                font-size: 15px;
+                color: $gray;
+                font-weight: 550;
+            }
+        }
+    }
 
-.commit-number {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    margin-right: 15px;
-    color: $main-blue;
+    .commit-info {
+
+        .commit-number {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            margin-right: 15px;
+            color: $main-blue;
+        }
+    }
+
 }
