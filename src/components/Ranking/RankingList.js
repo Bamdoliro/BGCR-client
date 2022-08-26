@@ -1,25 +1,25 @@
 import "./rankingList.scss";
 
-function RankingList() {
+function RankingList( {ranking, user_name, git_id, commit} ) {
     return (
-        <li className="RankingList">
-            <div className="FrontInfo">
-                <div className="RankInfo">
-                    <span className="RankNumber">
-                        4
+        <li className="ranking-list">
+            <div className="front-info ">
+                <div className="rank-info">
+                    <span className="rank-number">
+                        {ranking}
                     </span>
                 </div>
-                <div className="Profile">
-                    <img className="profileImg" src="https://avatars.githubusercontent.com/u/102217654?v=4" />
-                    <div className="Info">
-                        <div className="Git_Id">SEOKKAMONI</div>
-                        <div className="UserName">김석진</div>
+                <div className="profile">
+                    <img className="profile_img" src="https://avatars.githubusercontent.com/u/102217654?v=4" />
+                    <div className="info">
+                        <div className="git-id">{git_id}</div>
+                        <div className="user-name">{user_name}</div>
                     </div>
                 </div>
             </div>
-            <div className="CommitInfo">
-                <span className="CommitNumber">
-                    <span>144 </span>COMMIT
+            <div className="commit_info">
+                <span className="commit-number">
+                    <span>{commit} </span>COMMIT
                 </span>
             </div>
         </li>
