@@ -1,9 +1,9 @@
-import Header from "./components/Header";
+import TopRanking from "./components/TopRanking/TopRanking";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <TopRanking userName="김한울" userId="gimhanul" gitrank="1" ordNumber="th" commits={1222}/>
     </div>
   );
 }
