@@ -4,7 +4,9 @@ function Header(){
     return(
         <header>
             <div>BGCR</div>
-            <input type="button" value='로그인' />
+            <button>
+                로그인
+            </button>
         </header>
     );
 };
