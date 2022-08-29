@@ -1,36 +1,39 @@
 @import "../../styles/common.scss";
-@import "../../index.scss";
 
 body {
     text-align: center;
-    font-size: 12px;
 
     li {
         list-style: none;
     }
 
-    .profile-img {
+    #profile-img {
         border-radius: 70%;
+        overflow: hidden;
     }
 
-    .rank-index {
-        font-size: 6px;
+    #rank-index {
+        display: inline-block;
+        font-size: 5px;
+        width: 30px;
+        height: 15px;
+        border-radius: 20%;
         color: white;
         background-color: $main-blue;
-        border-radius: 30%;
     }
 
-    .userId {
-        font-size: 14px;
+    #userId {
+        font-size: 20px;
+        font-weight: 550;
     }
     
-    .userName {
-        font-size: 10px;
-        color: $dark-gray;
+    #userName {
+        font-size: 13px;
+        color: $gray;
     }
     
-    .commits {
-        font-size: 14px;
+    #commits {
+        font-size: 15px;
         color: $main-blue;
     }
 }
@@ -39,34 +42,34 @@ body {
     position: relative;
     margin: 0 auto;
 
-    .profile-img {
+    #profile-img {
         text-align: center;
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 }
 
 #Top2-user {
     position: absolute;
     top: 30px;
-    left: 50px;
+    left: 250px;
 
-    .profile-img {
+    #profile-img {
         text-align: center;
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
     }
 }
 
 #Top3-user {
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: 250px;
 
-    .profile-img {
+    #profile-img {
         text-align: center;
-        width: 100px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
     }
 }
 
