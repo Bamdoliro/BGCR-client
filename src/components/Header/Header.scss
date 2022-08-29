@@ -1,10 +1,11 @@
+@import "/src/styles/common.scss";
+
 header{
     display: flex;
     justify-content: space-between;
     padding: 8px;
 
     div{
-        font-family: 'Noto Sans KR', sans-serif;
         font-weight: 600;
         font-size: 30px;
         margin-left: 50px;
@@ -13,7 +14,7 @@ header{
         width: 90px;
         height: 40px;
         border-radius: 30px;
-        background-color: #3A86FF;
+        background-color: $main-blue;
         color: #fff;
         font-weight: 600;
         font-size: 16px;
