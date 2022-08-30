@@ -1,21 +1,12 @@
 @import "../../styles/common.scss";
-<<<<<<< HEAD
 
 body {
     text-align: center;
-=======
-@import "../../index.scss";
-
-body {
-    text-align: center;
-    font-size: 12px;
->>>>>>> 2bdb25c68df7ab212291e6079925440565c24859
 
     li {
         list-style: none;
     }
 
-<<<<<<< HEAD
     #profile-img {
         border-radius: 70%;
         overflow: hidden;
@@ -43,30 +34,6 @@ body {
     
     #commits {
         font-size: 15px;
-=======
-    .profile-img {
-        border-radius: 70%;
-    }
-
-    .rank-index {
-        font-size: 6px;
-        color: white;
-        background-color: $main-blue;
-        border-radius: 30%;
-    }
-
-    .userId {
-        font-size: 14px;
-    }
-    
-    .userName {
-        font-size: 10px;
-        color: $dark-gray;
-    }
-    
-    .commits {
-        font-size: 14px;
->>>>>>> 2bdb25c68df7ab212291e6079925440565c24859
         color: $main-blue;
     }
 }
@@ -75,59 +42,34 @@ body {
     position: relative;
     margin: 0 auto;
 
-<<<<<<< HEAD
     #profile-img {
         text-align: center;
         width: 100px;
         height: 100px;
-=======
-    .profile-img {
-        text-align: center;
-        width: 120px;
-        height: 120px;
->>>>>>> 2bdb25c68df7ab212291e6079925440565c24859
     }
 }
 
 #Top2-user {
     position: absolute;
     top: 30px;
-<<<<<<< HEAD
     left: 250px;
 
     #profile-img {
         text-align: center;
         width: 85px;
         height: 85px;
-=======
-    left: 50px;
-
-    .profile-img {
-        text-align: center;
-        width: 100px;
-        height: 100px;
->>>>>>> 2bdb25c68df7ab212291e6079925440565c24859
     }
 }
 
 #Top3-user {
     position: absolute;
     top: 30px;
-<<<<<<< HEAD
     right: 250px;
 
     #profile-img {
         text-align: center;
         width: 85px;
         height: 85px;
-=======
-    right: 50px;
-
-    .profile-img {
-        text-align: center;
-        width: 100px;
-        height: 100px;
->>>>>>> 2bdb25c68df7ab212291e6079925440565c24859
     }
 }
 
