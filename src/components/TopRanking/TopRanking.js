@@ -1,59 +1,27 @@
 import "./TopRanking.scss";
 
-function TopRanking({userName, userId, gitRank, ordNumber, commits}) {
+function TopRanking(props){
     return (
-        <ul classname="Top-user">
-
-            <li id="Top1-user">
-                <div classname="user-info">
-                    <div classname="profile">   
-                        <img id="profile-img" src="https://avatars.githubusercontent.com/u/80656733?v=4"/>
-                            <span id="rank-index">
-                                {gitRank}{ordNumber}
-                            </span>
-                        <div classname="profile-info">
-                            <div id="userId">{userId}</div>
-                            <div id="userName">{userName}</div>
-                            <span id="commits">{commits} COMMIT</span>
-                        </div>
+        <li id="Top1-user">
+            <div className="user-info">
+                <div className="profile">   
+                    <img className="profile-img" src={props.imgSrc}/>
+                        <span className="rank-index">
+                            {props.gitRank}{props.ordNumber}
+                        </span>
+                    <div className="profile-info">
+                        <div className="userId">{props.userId}</div>
+                        <div className="props.userName">{props.userName}</div>
+                        <span className="Commits">{props.commits} COMMIT</span>
                     </div>
                 </div>
-            </li>
-
-            <li id="Top2-user">
-                <div classname="user-info">
-                    <div classname="profile">   
-                        <img id="profile-img" src="https://avatars.githubusercontent.com/u/80656733?v=4"/>
-                            <span id="rank-index">
-                                {gitRank}{ordNumber}
-                            </span>
-                        <div classname="profile-info">
-                            <div id="userId">{userId}</div>
-                            <div id="userName">{userName}</div>
-                            <span id="commits">{commits} COMMIT</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li id="Top3-user">
-                <div classname="user-info">
-                    <div classname="profile">   
-                        <img id="profile-img" src="https://avatars.githubusercontent.com/u/80656733?v=4"/>
-                            <span id="rank-index">
-                                {gitRank}{ordNumber}
-                            </span>
-                        <div classname="profile-info">
-                            <div id="userId">{userId}</div>
-                            <div id="userName">{userName}</div>
-                            <span id="commits">{commits} COMMIT</span>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-        </ul>
+            </div>
+        </li>
     );
 }
+
+TopRanking.defaultProps = {
+    userName : "이름이 없습니다."
+};
 
 export default TopRanking;

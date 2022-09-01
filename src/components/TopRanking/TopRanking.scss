@@ -7,12 +7,13 @@ body {
         list-style: none;
     }
 
-    #profile-img {
+
+    .profile-img {
         border-radius: 70%;
         overflow: hidden;
     }
 
-    #rank-index {
+    .rank-index {
         display: inline-block;
         font-size: 5px;
         width: 30px;
@@ -22,27 +23,28 @@ body {
         background-color: $main-blue;
     }
 
-    #userId {
+    .userId {
         font-size: 20px;
         font-weight: 550;
     }
     
-    #userName {
+    .userName {
         font-size: 13px;
         color: $gray;
     }
     
-    #commits {
+    .Commits {
         font-size: 15px;
         color: $main-blue;
     }
 }
 
 #Top1-user {
+    display: inline-block;
     position: relative;
     margin: 0 auto;
 
-    #profile-img {
+    .profile-img {
         text-align: center;
         width: 100px;
         height: 100px;
@@ -54,7 +56,7 @@ body {
     top: 30px;
     left: 250px;
 
-    #profile-img {
+    .profile-img {
         text-align: center;
         width: 85px;
         height: 85px;
@@ -66,7 +68,7 @@ body {
     top: 30px;
     right: 250px;
 
-    #profile-img {
+    .profile-img {
         text-align: center;
         width: 85px;
         height: 85px;
