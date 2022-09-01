@@ -1,0 +1,76 @@
+@import "../../styles/common.scss";
+
+body {
+    text-align: center;
+
+    li {
+        list-style: none;
+    }
+
+    #profile-img {
+        border-radius: 70%;
+        overflow: hidden;
+    }
+
+    #rank-index {
+        display: inline-block;
+        font-size: 5px;
+        width: 30px;
+        height: 15px;
+        border-radius: 20%;
+        color: white;
+        background-color: $main-blue;
+    }
+
+    #userId {
+        font-size: 20px;
+        font-weight: 550;
+    }
+    
+    #userName {
+        font-size: 13px;
+        color: $gray;
+    }
+    
+    #commits {
+        font-size: 15px;
+        color: $main-blue;
+    }
+}
+
+#Top1-user {
+    position: relative;
+    margin: 0 auto;
+
+    #profile-img {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+#Top2-user {
+    position: absolute;
+    top: 30px;
+    left: 250px;
+
+    #profile-img {
+        text-align: center;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+#Top3-user {
+    position: absolute;
+    top: 30px;
+    right: 250px;
+
+    #profile-img {
+        text-align: center;
+        width: 85px;
+        height: 85px;
+    }
+}
+
+
