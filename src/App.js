@@ -1,9 +1,9 @@
-import TopRanking from "./components/TopRanking/TopRanking";
+import TopRankingLayout from "./components/TopRanking/TopRankingArticle";
 
 function App() {
   return (
     <div className="App">
-      <TopRanking userName="김한울" userId="gimhanul" gitRank="1" ordNumber="th" commits={1222}/>
+      <TopRankingLayout />
     </div>
   );
 }
