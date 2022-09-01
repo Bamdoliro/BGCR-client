@@ -1,6 +1,6 @@
 import "./rankingList.scss";
 
-function RankingList( {gitRanking, userName, gitId, numberOfCommit} ) {
+function RankingList( {gitRanking, userName, gitId, numberOfCommit, profileImg} ) {
     return (
         <li className="ranking-list">
             <div className="front-info ">
@@ -10,7 +10,7 @@ function RankingList( {gitRanking, userName, gitId, numberOfCommit} ) {
                     </span>
                 </div>
                 <div className="profile">
-                    <img className="profile_img" src="https://avatars.githubusercontent.com/u/102217654?v=4" />
+                    <img className="profile_img" src={profileImg} />
                     <div className="info">
                         <div className="git-id">{gitId}</div>
                         <div className="user-name">{userName}</div>
