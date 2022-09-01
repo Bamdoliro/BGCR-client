@@ -1,9 +1,9 @@
-import TopRankingLayout from "./components/TopRanking/TopRankingArticle";
+import TopRankingArticle from "./components/TopRanking/TopRankingArticle";
 
 function App() {
   return (
     <div className="App">
-      <TopRankingLayout />
+      <TopRankingArticle />
     </div>
   );
 }
