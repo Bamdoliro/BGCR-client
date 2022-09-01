@@ -1,4 +1,6 @@
 import TopRanking from "./components/TopRanking/TopRanking";
+import RankingList from "./components/Ranking/RankingList";
+import "./index.scss"
 
 function App() {
   return (
