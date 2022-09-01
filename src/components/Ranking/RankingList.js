@@ -10,7 +10,7 @@ function RankingList( {gitRanking, userName, gitId, numberOfCommit, profileImg} 
                     </span>
                 </div>
                 <div className="profile">
-                    <img className="profile_img" src={profileImg} />
+                    <img className="profile_img" src={profileImg} alt="profile" />
                     <div className="info">
                         <div className="git-id">{gitId}</div>
                         <div className="user-name">{userName}</div>
