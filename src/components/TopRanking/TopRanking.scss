@@ -1,78 +1,97 @@
 @import "../../styles/common.scss";
 
-body {
-    text-align: center;
+.Top-user {
+    display: flex;
+    margin: 70px auto 0;
+    padding: 50px auto;
+    width: min-content;
+    border-bottom: 1px solid $gray;
 
     li {
         list-style: none;
+        width: 200px;
+
+        img {
+            text-align: center;
+            width: 85px;
+            width: 85px;
+        }
+
+        &:nth-child(2) { // 1st
+            display: inline-block;
+            position: relative;
+            bottom: 50px;
+
+            img {
+                text-align: center;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &:nth-child(1) { // 2nd
+            display: inline-block;
+        
+            img {
+                bottom: 120px;
+                left: 120px;
+            }
+        }
+
+        &:nth-child(3) { // 3rd
+            display: inline-block;
+        
+            img {
+                top: 35px;
+                right: 120px;
+            }
+        }
     }
 
-
-    .profile-img {
-        border-radius: 70%;
-        overflow: hidden;
-    }
-
-    .rank-index {
-        display: inline-block;
-        font-size: 5px;
-        width: 30px;
-        height: 15px;
-        border-radius: 20%;
-        color: white;
-        background-color: $main-blue;
-    }
-
-    .userId {
-        font-size: 20px;
-        font-weight: 550;
-    }
-    
-    .userName {
-        font-size: 13px;
-        color: $gray;
-    }
-    
-    .Commits {
-        font-size: 15px;
-        color: $main-blue;
-    }
-}
-
-#Top1-user {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto;
-
-    .profile-img {
+    .profile {
         text-align: center;
-        width: 100px;
-        height: 100px;
+
+        > div {
+            position: relative;
+
+            .profile-img {
+                border-radius: 70%;
+                overflow: hidden;
+            }
+
+            .rank-index {
+                position: absolute;
+                bottom: 5px;
+                right: 50px;
+                display: inline-block;
+                font-size: 5px;
+                width: 30px;
+                height: 15px;
+                border-radius: 30px;
+                color: white;
+                background-color: $main-blue;
+            }
+        }
+
+        .profile-info {
+            > div{
+                margin: 3px 0;
+            }
+            .userId {
+                font-size: 20px;
+                font-weight: 550;
+            }
+            
+            .userName {
+                font-size: 13px;
+                color: $gray;
+            }
+            
+            .Commits {
+                font-size: 15px;
+                color: $main-blue;
+            }
+        }
     }
 }
-
-#Top2-user {
-    position: absolute;
-    top: 30px;
-    left: 250px;
-
-    .profile-img {
-        text-align: center;
-        width: 85px;
-        height: 85px;
-    }
-}
-
-#Top3-user {
-    position: absolute;
-    top: 30px;
-    right: 250px;
-
-    .profile-img {
-        text-align: center;
-        width: 85px;
-        height: 85px;
-    }
-}
-
 

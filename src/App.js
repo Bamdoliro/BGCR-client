@@ -1,3 +1,4 @@
+import "./index.scss"
 import TopRankingArticle from "./components/TopRanking/TopRankingArticle";
 
 function App() {
