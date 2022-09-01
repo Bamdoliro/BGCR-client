@@ -8,7 +8,13 @@ function App() {
     <div className="App">
       <Header />
       <TopRanking userName="김한울" userId="gimhanul" gitRank="1" ordNumber="th" commits={1222}/>
-      <RankingList />
+      <RankingList
+        gitRanking={1}
+        userName={"김석진"} 
+        gitId={"SEOKKAMONI"}
+        numberOfCommit={294}
+        profileImg={"https://avatars.githubusercontent.com/u/102217654?v=4"}
+      />
     </div>
   );
 }
