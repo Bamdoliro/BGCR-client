@@ -1,0 +1,25 @@
+@import "/src/styles/common.scss";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    div{
+        font-weight: 600;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    button{
+        width: 90px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: $main-blue;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        border: none;
+        margin-right: 50px;
+    }
+}
