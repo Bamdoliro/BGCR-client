@@ -5,10 +5,11 @@ header{
     justify-content: space-between;
     padding: 8px;
 
-    div{
+    div#logo{
         font-weight: 600;
         font-size: 30px;
         margin-left: 50px;
+        cursor: pointer;
     }
     button{
         width: 90px;
