@@ -1,0 +1,50 @@
+@import '/src/styles/common.scss';
+
+.mod-switch {
+    margin-right: 20px;
+
+    #switch {
+        position: absolute;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+
+
+        /* checking style */
+        &:checked+.switch_label {
+            background: white;
+            border: 2px solid $main-blue;
+        }
+
+        &:checked+.switch_label .onf_btn {
+            left: 32px;
+            background: $main-blue;
+        }
+    }
+}
+
+.switch_label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: $main-blue;
+    border: 2px solid $main-blue;
+    border-radius: 30px;
+    transition: 0.2s;
+
+    .onf_btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: white;
+        transition: 0.2s;
+    }
+}
