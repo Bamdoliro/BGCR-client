@@ -1,34 +1,35 @@
 import RankingList from "../Ranking/RankingList";
 import TopRankingArticle from "../TopRanking/TopRankingArticle";
+import RankingData from "../data/RankingData.json"
 
 import "./section.scss"
+import { useEffect, useState } from "react";
 
 function Section() {
+    const [rankingData, setRankingData] = useState([]);
+
+    useEffect(() => {
+        setRankingData(RankingData.row)
+    }, [])
+
     return (
         <div className="section-box">
             <TopRankingArticle userName="김한울" userId="gimhanul" gitRank="1" ordNumber="th" commits={1222} />
             <div className="ranking-ul">
-                <RankingList
-                    gitRanking={1}
-                    userName={"김석진"}
-                    gitId={"SEOKKAMONI"}
-                    numberOfCommit={294}
-                    profileImg={"https://avatars.githubusercontent.com/u/102217654?v=4"}
-                />
-                <RankingList
-                    gitRanking={1}
-                    userName={"김석진"}
-                    gitId={"SEOKKAMONI"}
-                    numberOfCommit={294}
-                    profileImg={"https://avatars.githubusercontent.com/u/102217654?v=4"}
-                />
-                <RankingList
-                    gitRanking={1}
-                    userName={"김석진"}
-                    gitId={"SEOKKAMONI"}
-                    numberOfCommit={294}
-                    profileImg={"https://avatars.githubusercontent.com/u/102217654?v=4"}
-                />
+                {
+                    rankingData.map(function(gitData, index) {
+                        return (
+                            <RankingList
+                                key={index}
+                                gitRanking={gitData.GIT_RANKING}
+                                userName={gitData.USER_NAME}
+                                gitId={gitData.GIT_ID}
+                                numberOfCommit={gitData.COMMIT}
+                                profileImg={gitData.PROFILE_IMG}
+                            />
+                        )
+                    })
+                }
             </div>
         </div>
     )
