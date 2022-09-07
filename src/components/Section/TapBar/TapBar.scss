@@ -15,6 +15,10 @@
         margin-left: 20px;
         > input{
             display: none;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ee0b0d38b385c5362e5ba79040bfb046c8a373c
             &:checked+label{
                 background-color: $main-blue;
                 color: white;
@@ -30,7 +34,10 @@
             background-color: #E3E3E3;
             border-radius: 15px 15px 0 0;
             margin: 2px;
+<<<<<<< HEAD
             cursor: pointer;
+=======
+>>>>>>> 8ee0b0d38b385c5362e5ba79040bfb046c8a373c
         }
     }
 }
