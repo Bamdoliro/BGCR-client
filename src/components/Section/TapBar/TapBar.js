@@ -1,13 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ModSwitch from './ModSwitch/ModSwitch';
 import './TapBar.scss';
 
 function TapBar(){
     const [radioValue, setRadioValue] = useState("1");
-    const handleClickRadio = (e) => { setRadioValue(e.target.value); }
-    useEffect(() => {
-        console.log(radioValue)
-    }, [radioValue])
+    const handleClickRadio = (e) => { console.log(e.target.value); setRadioValue(e.target.value); }
     return(
         <div id="buttons">
             <div id="taps">
