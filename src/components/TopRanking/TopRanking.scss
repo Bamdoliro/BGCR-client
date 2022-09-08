@@ -5,7 +5,7 @@
     margin: 70px auto 0;
     padding: 50px auto;
     width: min-content;
-    border-bottom: 1px solid $gray;
+    border-bottom: 1px solid $light-gray;
 
     li {
         list-style: none;
@@ -67,6 +67,7 @@
                 font-size: 5px;
                 width: 30px;
                 height: 15px;
+                line-height: 15px;
                 border-radius: 30px;
                 color: white;
                 background-color: $main-blue;
@@ -84,7 +85,7 @@
             
             .userName {
                 font-size: 13px;
-                color: $gray;
+                color: $light-gray;
             }
             
             .Commits {
@@ -95,3 +96,13 @@
     }
 }
 
+.Top-ranking-dark {
+    .profile-info {
+        .userId {
+            color: white;
+        }
+        .Commits {
+            color: white !important;
+        }
+    }
+}

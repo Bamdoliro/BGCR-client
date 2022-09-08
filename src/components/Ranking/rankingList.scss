@@ -41,7 +41,7 @@
 
             .user-name {
                 font-size: 15px;
-                color: $gray;
+                color: $light-gray;
                 font-weight: 550;
                 text-align: left;
             }
@@ -58,5 +58,15 @@
             color: $main-blue;
         }
     }
+}
 
+.ranking-dark {
+    .front-info {
+        color: white;
+    }
+    .commit-info {
+        .commit-number {
+            color: white;
+        }
+    }
 }
