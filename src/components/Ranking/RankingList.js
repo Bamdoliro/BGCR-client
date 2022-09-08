@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import "./rankingList.scss";
 
 function RankingList( {gitRanking, userName, gitId, numberOfCommit, profileImg} ) {
+    const { isDark } = useContext(ThemeContext);
+
     return (
-        <li className="ranking-list">
+        <li className={"ranking-list".concat(isDark ? " ranking-dark" : "")}>
             <div className="front-info ">
                 <div className="rank-info">
                     <span className="rank-number">

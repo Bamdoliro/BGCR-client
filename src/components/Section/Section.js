@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import RankingList from "../Ranking/RankingList";
 import TopRankingArticle from "../TopRanking/TopRankingArticle";
 import RankingData from "../data/RankingData.json"
@@ -6,6 +8,7 @@ import "./section.scss"
 import { useEffect, useState } from "react";
 
 function Section() {
+    const { isDark } = useContext(ThemeContext);
     const [rankingData, setRankingData] = useState([]);
 
     useEffect(() => {
@@ -13,7 +16,7 @@ function Section() {
     }, [])
 
     return (
-        <div className="section-box">
+        <div className={"section-box".concat(isDark ? " section-dark" : "")}>
             <TopRankingArticle userName="김한울" userId="gimhanul" gitRank="1" ordNumber="th" commits={1222} />
             <div className="ranking-ul">
                 {

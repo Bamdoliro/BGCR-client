@@ -11,7 +11,7 @@ header{
         margin-left: 50px;
         cursor: pointer;
     }
-    button{
+    #login-button{
         width: 75px;
         height: 35px;
         border-radius: 30px;
@@ -22,5 +22,15 @@ header{
         line-height: 16px;
         border: none;
         margin-right: 50px;
+    }
+}
+
+.header-dark {
+    background-color: black;
+    color:white;
+
+    #login-button {
+        background-color: white;
+        color: black;
     }
 }
