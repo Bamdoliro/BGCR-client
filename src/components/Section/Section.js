@@ -18,16 +18,18 @@ function Section() {
             <div className="ranking-ul">
                 {
                     rankingData.map(function(gitData, index) {
-                        return (
-                            <RankingList
-                                key={index}
-                                gitRanking={gitData.GIT_RANKING}
-                                userName={gitData.USER_NAME}
-                                gitId={gitData.GIT_ID}
-                                numberOfCommit={gitData.COMMIT}
-                                profileImg={gitData.PROFILE_IMG}
-                            />
-                        )
+                        if(index <= 2) {
+                            return (
+                                <RankingList
+                                    key={index}
+                                    gitRanking={index+4}
+                                    userName={gitData.USER_NAME}
+                                    gitId={gitData.GIT_ID}
+                                    numberOfCommit={gitData.COMMIT}
+                                    profileImg={gitData.PROFILE_IMG}
+                                />
+                            )
+                        }
                     })
                 }
             </div>
