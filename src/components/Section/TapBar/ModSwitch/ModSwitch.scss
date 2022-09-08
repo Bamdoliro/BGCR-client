@@ -14,12 +14,11 @@
         /* checking style */
         &:checked+.switch_label {
             background: white;
-            border: 2px solid $main-blue;
         }
 
         &:checked+.switch_label .onf_btn {
-            left: 27px;
-            background: $main-blue;
+            left: 31px;
+            background: $dark-gray;
         }
     }
 }
@@ -31,7 +30,6 @@
     width: 55px;
     height: 30px;
     background: $main-blue;
-    border: 2px solid $main-blue;
     border-radius: 30px;
     transition: 0.2s;
 
