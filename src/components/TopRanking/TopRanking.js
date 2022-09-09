@@ -1,20 +1,20 @@
 import "./TopRanking.scss";
 
-function TopRanking(props){
+function TopRanking({imgSrc, gitRank, ordNumber, userId, userName, commits}){
     return (
         <li id="Top-user">
             <div className="user-info">
                 <div className="profile">
                     <div>
-                        <img className="profile-img" src={props.imgSrc}/>
+                        <img className="profile-img" src={imgSrc}/>
                         <span className="rank-index">
-                            {props.gitRank}{props.ordNumber}
+                            {gitRank}{ordNumber}
                         </span>
                     </div>
                     <div className="profile-info">
-                        <div className="userId">{props.userId}</div>
-                        <div className="userName">{props.userName}</div>
-                        <div className="Commits">{props.commits} COMMIT</div>
+                        <div className="userId"><a href={`https://github.com/${userId}`} target="_blank">{userId}</a></div>
+                        <div className="userName">{userName}</div>
+                        <div className="Commits">{commits} COMMIT</div>
                     </div>
                 </div>
             </div>
