@@ -16,7 +16,7 @@ function RankingList( {gitRanking, userName, gitId, numberOfCommit, profileImg} 
                 <div className="profile">
                     <img className="profile_img" src={profileImg} alt="profile" />
                     <div className="info">
-                        <div className="git-id">{gitId}</div>
+                        <div className="git-id"><a href={`https://github.com/${gitId}`} target="_blank">{gitId}</a></div>
                         <div className="user-name">{userName}</div>
                     </div>
                 </div>
