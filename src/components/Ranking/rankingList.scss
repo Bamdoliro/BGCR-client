@@ -29,7 +29,7 @@
             width: 50px;
             height: 50px;
             border-radius: 70%;
-            margin-right: 5px;
+            margin-right: 10px;
         }
 
         .info {
@@ -40,6 +40,7 @@
             }
 
             .user-name {
+                padding-top: 3px;
                 font-size: 15px;
                 color: $light-gray;
                 font-weight: 550;
@@ -63,6 +64,11 @@
 .ranking-dark {
     .front-info {
         color: white;
+    }
+    .profile {
+        .info .git-id a {
+            color: white;
+        }
     }
     .commit-info {
         .commit-number {
