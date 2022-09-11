@@ -27,7 +27,10 @@ function Section() {
 
     return (
         <div className={"section-box".concat(isDark ? " section-dark" : "")}>
-            <TopRankingArticle userName="김한울" userId="gimhanul" gitRank="1" ordNumber="th" commits={1222} />
+            <TopRankingArticle />
+            {/* <RankingList gitRanking={1} userName={"김한울"} gitId={"gimhanul"} numberOfCommit={1222} profileImg={"https://avatars.githubusercontent.com/u/80656733?v=4"} />
+            <RankingList gitRanking={1} userName={"김한울"} gitId={"gimhanul"} numberOfCommit={1222} profileImg={"https://avatars.githubusercontent.com/u/80656733?v=4"} />
+            <RankingList gitRanking={1} userName={"김한울"} gitId={"gimhanul"} numberOfCommit={1222} profileImg={"https://avatars.githubusercontent.com/u/80656733?v=4"} /> */}
             <div className="ranking-ul">
                 {
                     rankingData.map(function(gitData, index) {
