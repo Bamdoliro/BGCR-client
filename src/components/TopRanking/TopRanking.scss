@@ -104,6 +104,81 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+// @media screen and (max-width: 910px) { // rank-index 중간 밀림 떄매
+//     .Top-user {
+//         .profile {
+//             > div {    
+//                 .rank-index {
+//                     right: 40px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width: 900px) {
+    .Top-user {
+        .profile {
+            > div {    
+                .rank-index {
+                     right: 40px;
+                }
+            }
+       }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .Top-user {
+        .profile {
+            > div {    
+                .rank-index {
+                     right: 50px;
+                }
+            }
+       }
+    }
+}
+
+@media screen and (max-width: 500px) { // 핸드폰
+    .Top-user {
+        .profile {
+            > div {    
+                .profile-img {
+                    border-radius: 60%;
+                    width: 75px;
+                    height: 75px;
+                }
+                .rank-index {
+                     right: 30px;
+                }
+            }
+
+            .profile-info {
+                .userId {
+                    font-size: 17px;
+                }
     
+                .userName {
+                    font-size: 10px;
+                }
+    
+                .Commits {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) { // 핸드폰
+    .Top-user {
+        .profile {
+            > div {    
+                .rank-index {
+                     right: 18px;
+                }
+            }
+       }
+    }
 }

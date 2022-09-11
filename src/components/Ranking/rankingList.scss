@@ -76,3 +76,29 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) { // 핸드폰
+    .ranking-list {
+        .profile {
+            .profile_img {
+                width: 45px;
+                height: 45px;
+            }
+            .info {
+                .git-id {
+                    font-size: 14px;
+                }
+    
+                .user-name {
+                    font-size: 15px;
+                }
+            }
+
+            .commit-info {
+                .commit-number {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

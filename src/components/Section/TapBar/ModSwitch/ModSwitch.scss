@@ -46,3 +46,22 @@
         transition: 0.2s;
     }
 }
+
+@media screen and (max-width: 500px) { // 핸드폰
+    .mod-switch {
+        #switch {
+            &:checked+.switch_label .onf_btn {
+                left: 26px;
+            }
+        }
+    }
+    .switch_label {
+        width: 45px;
+        height: 25px;
+        .onf_btn {
+            width: 16px;
+            height: 16px;
+            border-radius: 16px;
+        }
+    }    
+}
