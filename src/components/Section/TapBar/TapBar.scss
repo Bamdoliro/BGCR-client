@@ -1,0 +1,67 @@
+@import '/src/styles/common.scss';
+
+#buttons{
+    display: flex;
+    width: 67%;
+    margin: 45px auto 0;
+    justify-content: space-between;
+    align-items: center;
+
+    .taps{
+        width: 400px;
+        display: flex;
+        margin-left: 20px;
+        > input{
+            display: none;
+
+            &:checked+label{
+                background-color: $main-blue;
+                color: white;
+            }
+        }
+        > label {
+            font-size: 16px;
+            border: none;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: #E3E3E3;
+            border-radius: 15px 15px 0 0;
+            margin: 0 2px;
+            cursor: pointer;
+        }
+    }
+    .taps-dark {
+        > input{
+            &:checked+label{
+                background-color: #E3E3E3;
+                color: black;
+            }
+        }
+        > label {
+            background-color: $gray;
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 790px) { // 태블릿
+    #buttons {
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 500px) { // 핸드폰
+    #buttons {
+        .taps {
+            width: 270px;
+            > label {
+                font-size: 12px;
+                border-radius: 8px 8px 0px 0px;
+                height: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}

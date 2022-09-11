@@ -1,0 +1,104 @@
+@import "/src/styles/common.scss";
+
+.ranking-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px auto;
+
+    .front-info {
+        display: flex;
+        align-items: center;
+
+        .rank-info {
+            .rank-number {
+                font-size: 24px;
+                font-weight: 600;
+                text-align: center;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+
+        .profile_img {
+            width: 50px;
+            height: 50px;
+            border-radius: 70%;
+            margin-right: 10px;
+        }
+
+        .info {
+            .git-id {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 20px;
+            }
+
+            .user-name {
+                padding-top: 3px;
+                font-size: 15px;
+                color: $light-gray;
+                font-weight: 550;
+                text-align: left;
+            }
+        }
+    }
+
+    .commit-info {
+
+        .commit-number {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            margin-right: 15px;
+            color: $main-blue;
+        }
+    }
+}
+
+.ranking-dark {
+    .front-info {
+        color: white;
+    }
+    .profile {
+        .info .git-id a {
+            color: white;
+        }
+    }
+    .commit-info {
+        .commit-number {
+            color: white;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) { // 핸드폰
+    .ranking-list {
+        .profile {
+            .profile_img {
+                width: 45px;
+                height: 45px;
+            }
+            .info {
+                .git-id {
+                    font-size: 14px;
+                }
+    
+                .user-name {
+                    font-size: 15px;
+                }
+            }
+
+            .commit-info {
+                .commit-number {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

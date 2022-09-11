@@ -1,0 +1,33 @@
+@import "/src/styles/common.scss";
+
+.section-box {
+    width: 68vw; // 여기 반응형
+    min-height: 80vh;
+    margin: 0 auto;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 50px;
+    background-color: white;
+
+    .ranking-ul {
+        position: relative;
+        margin: 0 auto;
+        padding-top: 20px;
+        border-top: 2px solid #E3E3E3;
+    }
+}
+
+.section-dark {
+    background-color: $dark-gray;
+
+    .ranking-ul {
+        border-top: 2px solid $light-gray;
+    }
+}
+
+@media screen and (max-width: 790px) { // 태블릿
+    .section-box {
+        width: 100%;
+        padding: 30px;
+    }    
+}

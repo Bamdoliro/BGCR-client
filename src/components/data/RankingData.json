@@ -1,0 +1,94 @@
+{
+    "row": {
+        "ALL": [
+            {
+                "GRADE": "1",
+                "USER_NAME": "김석진",
+                "GIT_ID": "SEOKKAMONI",
+                "COMMIT": 331,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/102217654?v=4"
+            },
+            {
+                "GRADE": "1",
+                "USER_NAME": "원설아",
+                "GIT_ID": "seola1ne",
+                "COMMIT": 204,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/89336471?v=4"
+            },
+            {
+                "GRADE": "1",
+                "USER_NAME": "이명재",
+                "GIT_ID": "arkk200",
+                "COMMIT": 485,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/102217839?v=4"
+            },
+            {
+                "GRADE": "2",
+                "USER_NAME": "이규진",
+                "GIT_ID": "leekyukin",
+                "COMMIT": 1619,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/86875273?v=4"
+            },
+            {
+                "GRADE": "2",
+                "USER_NAME": "김한울",
+                "GIT_ID": "gimhanul",
+                "COMMIT": 2239,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/80656733?v=4"
+            },
+            {
+                "GRADE": "2",
+                "USER_NAME": "최태영",
+                "GIT_ID": "ty8116",
+                "COMMIT": 33,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/80656696?v=4"
+            }
+        ],
+        "GRADE_ONE": [
+            {
+                "GRADE": "1",
+                "USER_NAME": "김석진",
+                "GIT_ID": "SEOKKAMONI",
+                "COMMIT": 331,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/102217654?v=4"
+            },
+            {
+                "GRADE": "1",
+                "USER_NAME": "원설아",
+                "GIT_ID": "seola1ne",
+                "COMMIT": 204,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/89336471?v=4"
+            },
+            {
+                "GRADE": "1",
+                "USER_NAME": "이명재",
+                "GIT_ID": "arkk200",
+                "COMMIT": 485,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/102217839?v=4"
+            }
+        ],
+        "GRADE_TWO": [
+            {
+                "GRADE": "2",
+                "USER_NAME": "이규진",
+                "GIT_ID": "leekyujin",
+                "COMMIT": 1619,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/86875273?v=4"
+            },
+            {
+                "GRADE": "2",
+                "USER_NAME": "김한울",
+                "GIT_ID": "gimhanul",
+                "COMMIT": 2239,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/80656733?v=4"
+            },
+            {
+                "GRADE": "2",
+                "USER_NAME": "최태영",
+                "GIT_ID": "ty8116",
+                "COMMIT": 33,
+                "PROFILE_IMG": "https://avatars.githubusercontent.com/u/80656696?v=4"
+            }
+        ]
+    }
+}

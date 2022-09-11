@@ -1,0 +1,38 @@
+@import "/src/styles/common.scss";
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: white;
+
+    #logo{
+        width: 80px;
+    }
+    #login-button{
+        width: 75px;
+        height: 35px;
+        border-radius: 30px;
+        background-color: $main-blue;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        border: none;
+    }
+}
+
+.header-dark {
+    background-color: $dark-gray;
+
+    #login-button {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 790px) { // 태블릿 & 핸드폰 둘 다 적용
+    header {
+        padding: 8px 10px;
+    }
+}
